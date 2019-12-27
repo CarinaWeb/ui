@@ -7,3 +7,4 @@ export { default as IconLabelButtons } from "./IconLabelButtons";
 export { default as OutlinedButtons } from "./OutlinedButtons";
 export { default as SplitButton } from "./SplitButton";
 export { default as TextButtons } from "./TextButtons";
+export { default as AltIconLabelButtons } from "./AltIconLabelButtons";
