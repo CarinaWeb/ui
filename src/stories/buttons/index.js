@@ -1,10 +1,8 @@
 export { default as ButtonSizes } from "./ButtonSizes";
-export { default as ContainedButtons } from "./ContainedButtons";
+export { default as Buttons } from "./Buttons";
 export { default as FloatingActionButtons } from "./FloatingActionButtons";
 export { default as GroupedButtons } from "./GroupedButtons";
 export { default as IconButtons } from "./IconButtons";
 export { default as IconLabelButtons } from "./IconLabelButtons";
-export { default as OutlinedButtons } from "./OutlinedButtons";
 export { default as SplitButton } from "./SplitButton";
-export { default as TextButtons } from "./TextButtons";
 export { default as AltIconLabelButtons } from "./AltIconLabelButtons";

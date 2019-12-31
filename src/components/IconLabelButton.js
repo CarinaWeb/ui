@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import Typography from "@material-ui/core/Typography";
 import Icon from "@material-ui/core/Icon";
-import { Grid, Box } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import { fade } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(theme => ({

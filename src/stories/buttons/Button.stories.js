@@ -1,15 +1,13 @@
 import React from "react";
 import { withKnobs } from "@storybook/addon-knobs";
 import {
+  Buttons,
   ButtonSizes,
-  ContainedButtons,
   FloatingActionButtons,
   GroupedButtons,
   IconButtons,
   IconLabelButtons,
-  OutlinedButtons,
   SplitButton,
-  TextButtons,
   AltIconLabelButtons,
 } from "./";
 
@@ -18,11 +16,7 @@ export default {
   decorators: [withKnobs],
 };
 
-export const containedButtons = () => <ContainedButtons />;
-
-export const outlinedButtons = () => <OutlinedButtons />;
-
-export const textButtons = () => <TextButtons />;
+export const buttons = () => <Buttons />;
 
 export const splitButton = () => <SplitButton />;
 
