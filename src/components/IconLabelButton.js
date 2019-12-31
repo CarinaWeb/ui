@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => ({
   root: {
     fontSize: theme.typography.pxToRem(24),
     padding: 12,
-    borderRadius: "15%",
+    borderRadius: 15,
     overflow: "visible", // Explicitly set the default value to solve a bug on IE 11.
     color: theme.palette.action.active,
     transition: theme.transitions.create("background-color", {
