@@ -8,11 +8,10 @@ import {
   IconButtons,
   IconLabelButtons,
   SplitButton,
-  AltIconLabelButtons,
 } from "./";
 
 export default {
-  title: "Button",
+  title: "MUI|Button",
   decorators: [withKnobs],
 };
 
@@ -29,5 +28,3 @@ export const floatingActionButtons = () => <FloatingActionButtons />;
 export const iconButtons = () => <IconButtons />;
 
 export const iconLabelButtons = () => <IconLabelButtons />;
-
-export const altIconLabelButtons = () => <AltIconLabelButtons />;

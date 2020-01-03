@@ -1,8 +1,8 @@
 import React from "react";
-import { Switches, SwitchLabels, SwitchSizes } from "./";
+import { Switches, SwitchLabels, SwitchSizes } from ".";
 
 export default {
-  title: "Switch",
+  title: "MUI|Switch",
 };
 
 export const switchSizes = () => <SwitchSizes />;

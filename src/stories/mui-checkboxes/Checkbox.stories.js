@@ -2,7 +2,7 @@ import React from "react";
 import { Checkboxes, CheckboxesGroup, CheckboxLabels } from "./";
 
 export default {
-  title: "Checkbox",
+  title: "MUI|Checkbox",
 };
 
 export const checkboxes = () => <Checkboxes />;

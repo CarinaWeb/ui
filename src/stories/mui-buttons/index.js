@@ -5,4 +5,3 @@ export { default as GroupedButtons } from "./GroupedButtons";
 export { default as IconButtons } from "./IconButtons";
 export { default as IconLabelButtons } from "./IconLabelButtons";
 export { default as SplitButton } from "./SplitButton";
-export { default as AltIconLabelButtons } from "./AltIconLabelButtons";

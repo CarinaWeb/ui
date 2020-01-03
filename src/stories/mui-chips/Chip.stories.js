@@ -2,7 +2,7 @@ import React from "react";
 import { Chips, OutlinedChips, LongText } from "./";
 
 export default {
-  title: "Chips",
+  title: "MUI|Chips",
 };
 
 export const chips = () => <Chips />;

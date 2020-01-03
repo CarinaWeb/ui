@@ -1,8 +1,8 @@
 import React from "react";
 import { select, text, radios } from "@storybook/addon-knobs";
 import { makeStyles } from "@material-ui/core/styles";
-import IconLabelButton from "../../components/IconLabelButton";
 import DeleteIcon from "@material-ui/icons/Delete";
+import IconButton from "../../components/IconButton";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -12,7 +12,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function AltIconLabelButtons() {
+export default function IconLabelButtons() {
   const classes = useStyles();
   const positionValue = radios(
     "Label position",
@@ -28,13 +28,9 @@ export default function AltIconLabelButtons() {
 
   return (
     <div className={classes.root}>
-      <IconLabelButton
-        color={color}
-        icon={<DeleteIcon />}
-        placement={positionValue}
-      >
+      <IconButton color={color} icon={<DeleteIcon />} placement={positionValue}>
         {labelValue}
-      </IconLabelButton>
+      </IconButton>
     </div>
   );
 }

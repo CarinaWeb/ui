@@ -2,7 +2,7 @@ import React from "react";
 import { BasicTextFields, TextFieldProps, Validation } from "./";
 
 export default {
-  title: "Text Fields",
+  title: "MUI|Text Fields",
 };
 
 export const validation = () => <Validation />;

@@ -2,7 +2,7 @@ import React from "react";
 import { GroupedSelect, MultipleSelect, SimpleSelect } from "./";
 
 export default {
-  title: "Select",
+  title: "MUI|Select",
 };
 
 export const simpleSelect = () => <SimpleSelect />;
