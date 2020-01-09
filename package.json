@@ -1,6 +1,9 @@
 {
   "name": "@carinaweb/ui",
-  "repository": "https://github.com/CarinaWeb/carina-ui",
+  "repository": "git://github.com/CarinaWeb/ui.git",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "version": "0.1.0",
   "private": true,
   "dependencies": {
