@@ -1,9 +1,6 @@
 {
   "name": "@carinaweb/ui",
   "repository": "git://github.com/CarinaWeb/ui.git",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/CarinaWeb"
-  },
   "version": "0.1.0",
   "dependencies": {
     "@material-ui/core": "^4.7.1",
