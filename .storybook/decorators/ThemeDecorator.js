@@ -2,11 +2,11 @@ import React from "react";
 import { ThemeProvider } from "@material-ui/styles";
 import { makeStyles } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import theme from "../../src/themes/Theme";
+import { Theme } from "../../src";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(Theme => ({
   root: {
-    padding: theme.spacing(2),
+    padding: Theme.spacing(2),
   },
 }));
 
@@ -14,7 +14,7 @@ export default storyFn => {
   const classes = useStyles();
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={Theme}>
       <CssBaseline />
       <div className={classes.root}>{storyFn()}</div>
     </ThemeProvider>

@@ -3,8 +3,8 @@ import { withKnobs } from "@storybook/addon-knobs";
 import { IconLabelButtons } from ".";
 
 export default {
-  title: "Carina|Button",
+  title: "Carina UI|IconButton",
   decorators: [withKnobs],
 };
 
-export const iconLabelButtons = () => <IconLabelButtons />;
+export const iconButton = () => <IconLabelButtons />;

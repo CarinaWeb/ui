@@ -36,4 +36,4 @@ addParameters({
 addDecorator(ThemeDecorator);
 
 // automatically import all files ending in *.stories.js
-configure(require.context("../src/stories", true, /\.stories\.js$/), module);
+configure(require.context("../stories", true, /\.stories\.js$/), module);

@@ -1,17 +1,22 @@
 {
   "name": "@carinaweb/ui",
-  "repository": "git://github.com/CarinaWeb/ui.git",
   "version": "0.1.0",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": "git://github.com/CarinaWeb/ui.git",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "dependencies": {
     "@material-ui/core": "^4.7.1",
-    "@material-ui/icons": "^4.5.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "^3.3.0"
+    "@material-ui/icons": "^4.5.1"
   },
   "scripts": {
     "start": "start-storybook -p 9009 -s public",
-    "build": "build-storybook -s public",
+    "build": "rm -rf dist && NODE_ENV=production babel src --out-dir dist --copy-files --ignore */stories,*/__tests__,spec.js,test.js,*/__snapshots__",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
@@ -33,12 +38,18 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
     "@storybook/addon-actions": "^5.2.8",
     "@storybook/addon-knobs": "^5.2.8",
     "@storybook/addon-links": "^5.2.8",
     "@storybook/addons": "^5.2.8",
     "@storybook/react": "^5.2.8",
     "prettier": "1.19.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "^3.3.0",
     "storybook-dark-mode": "^0.2.0"
   }
 }
