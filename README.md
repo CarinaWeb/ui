@@ -1,13 +1,17 @@
-# Frontend library for Carina projects
+# Carina UI
 
-## Installation and Usage
+## Installation
 
-For official instructions, see https://help.github.com/en/github/managing-packages-with-github-packages/configuring-npm-for-use-with-github-packages#installing-a-package
+With npm, just run: `npm install @material-ui/core @carinaweb/ui`
+
+With Github Package Repository:
 
 1. Install material-ui dependency: `npm install @material-ui/core`
 2. Add a file named `.npmrc` in the same directory as your package.json. In this file, add the following line: `registry=https://npm.pkg.github.com/carinaweb`
 3. In package.json, add the following line under dependencies: `"@carinaweb/ui": "0.1.0"`
 4. Run `npm install`
+
+## Usage
 
 To import a Carina component, such as the Theme:
 
