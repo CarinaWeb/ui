@@ -1,15 +1,16 @@
-# Carina UI
+<p align="center">
+  <a href="http://storybook.carina.org" rel="noopener" target="_blank"><img width="150" src="https://dnox5b6qypgn8.cloudfront.net/carina-primary-logo.svg" alt="Carina logo"></a></p>
+</p>
+
+<h1 align="center">Carina UI</h1>
+
+Interact with components at http://storybook.carina.org
 
 ## Installation
 
-With npm, just run: `npm install @material-ui/core @carinaweb/ui`
-
-With Github Package Repository:
-
-1. Install material-ui dependency: `npm install @material-ui/core`
-2. Add a file named `.npmrc` in the same directory as your package.json. In this file, add the following line: `registry=https://npm.pkg.github.com/carinaweb`
-3. In package.json, add the following line under dependencies: `"@carinaweb/ui": "0.1.0"`
-4. Run `npm install`
+```
+npm install @material-ui/core @carinaweb/ui
+```
 
 ## Usage
 
@@ -18,17 +19,14 @@ To import a Carina component, such as the Theme:
 ```
 import React from "react";
 import { MuiThemeProvider } from "@material-ui/core/styles";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import { Typography, Button } from "@material-ui/core";
+import { CssBaseline, Typography } from "@material-ui/core";
 import { Theme } from "@carinaweb/ui";
 
 function App() {
   return (
     <MuiThemeProvider theme={Theme}>
       <CssBaseline />
-      <Typography variant="body1">
-        Hello earth
-      </Typography>
+      <Typography variant="body1">Hello earth</Typography>
     </MuiThemeProvider>
   );
 }
@@ -42,10 +40,10 @@ Clone this repository and then:
 
 - `npm install`: install dependencies
 - `npm start`: runs storybook at http://localhost:9009/
+- `git push` to `master` branch: a github workflow will build and deploy storybook to production
+- `npm publish`: publish package to npm and github
+
+Other scripts:
+
 - `npm run build`: outputs distributable components from `/src` into `/dist`
 - `npm run build-storybook`: outputs stories from `/stories` into `storybook-static`
-- `npm publish`: publish to GPR
-
-## Production
-
-See storybook at http://storybook.carina.org
