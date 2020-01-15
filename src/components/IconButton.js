@@ -2,9 +2,10 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import Typography from "@material-ui/core/Typography";
-import Icon from "@material-ui/core/Icon";
+// import Icon from "@material-ui/core/Icon";
 import { Grid } from "@material-ui/core";
 import { fade } from "@material-ui/core/styles";
+import PropTypes from "prop-types";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -33,7 +34,13 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default ({ children, color, icon, placement, ...other }) => {
+const IconButton = ({
+  children,
+  color = "primary",
+  icon,
+  placement = "bottom",
+  ...other
+}) => {
   const classes = useStyles();
 
   const DIRECTION = {
@@ -51,7 +58,7 @@ export default ({ children, color, icon, placement, ...other }) => {
         justify="center"
         alignItems="center"
       >
-        <Icon color={color}>{icon}</Icon>
+        {React.createElement(icon, { color: color })}
         <Typography color={color} variant="body1">
           {children}
         </Typography>
@@ -59,3 +66,31 @@ export default ({ children, color, icon, placement, ...other }) => {
     </ButtonBase>
   );
 };
+
+IconButton.propTypes = {
+  /**
+   * The content of the component.
+   */
+  children: PropTypes.node.isRequired,
+  /**
+   * The color of the component.
+   */
+  color: PropTypes.oneOf([
+    "inherit",
+    "primary",
+    "secondary",
+    "action",
+    "error",
+    "disabled",
+  ]),
+  /**
+   * The icon of the component.
+   */
+  icon: PropTypes.elementType.isRequired,
+  /**
+   * The placement of the text.
+   */
+  placement: PropTypes.oneOf(["top", "bottom", "left", "right"]),
+};
+
+export default IconButton;

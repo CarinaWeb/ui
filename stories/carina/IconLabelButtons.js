@@ -1,8 +1,7 @@
 import React from "react";
 import { select, text, radios } from "@storybook/addon-knobs";
 import { makeStyles } from "@material-ui/core/styles";
-import DeleteIcon from "@material-ui/icons/Delete";
-import { IconButton } from "../../src";
+import { IconButton, Trash } from "../../src";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -28,7 +27,7 @@ export default function IconLabelButtons() {
 
   return (
     <div className={classes.root}>
-      <IconButton color={color} icon={<DeleteIcon />} placement={positionValue}>
+      <IconButton color={color} icon={Trash} placement={positionValue}>
         {labelValue}
       </IconButton>
     </div>
