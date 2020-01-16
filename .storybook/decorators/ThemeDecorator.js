@@ -2,7 +2,7 @@ import React from "react";
 import { ThemeProvider } from "@material-ui/styles";
 import { makeStyles } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import { Theme } from "../../src";
+import { Theme } from "../../src/styles";
 
 const useStyles = makeStyles(Theme => ({
   root: {

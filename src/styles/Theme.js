@@ -1,5 +1,5 @@
 import { createMuiTheme } from "@material-ui/core/styles";
-import { COLOR } from "../constants/colors";
+import COLOR from "./Colors";
 
 let theme = createMuiTheme({
   typography: {

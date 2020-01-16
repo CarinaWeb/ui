@@ -1,4 +1,4 @@
-export const COLOR = {
+export default {
   BLACK: "#000000",
   WHITE: "#ffffff",
   BLACK50: "#252729",

@@ -1,7 +1,8 @@
 import React from "react";
 import { select, text, radios } from "@storybook/addon-knobs";
 import { makeStyles } from "@material-ui/core/styles";
-import { IconButton, Trash } from "../../src";
+import { IconButton } from "../../src/core";
+import Trash from "../../src/icons/Trash";
 
 const useStyles = makeStyles(theme => ({
   root: {
