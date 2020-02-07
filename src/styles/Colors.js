@@ -3,6 +3,7 @@ export default {
   WHITE: "#ffffff",
   BLACK50: "#252729",
   BLACK30: "#555a5f",
+  GRAY: "#979797",
   GRAY80: "#747476",
   GRAY60: "#a7a7a9",
   GRAY40: "#dbdbdb",
