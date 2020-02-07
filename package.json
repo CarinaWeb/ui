@@ -11,8 +11,8 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
-    "@material-ui/core": "^4.7.1",
-    "@material-ui/icons": "^4.5.1",
+    "@material-ui/core": "^4.9.1",
+    "@material-ui/icons": "^4.9.1",
     "@types/jest": "^25.1.2",
     "@types/node": "^13.7.0",
     "@types/react": "^16.9.19",
@@ -45,18 +45,18 @@
     ]
   },
   "devDependencies": {
-    "@babel/cli": "^7.7.7",
-    "@babel/core": "^7.7.7",
-    "@babel/preset-react": "^7.7.4",
-    "@storybook/addon-actions": "^5.2.8",
-    "@storybook/addon-knobs": "^5.2.8",
-    "@storybook/addon-links": "^5.2.8",
-    "@storybook/addons": "^5.2.8",
-    "@storybook/react": "^5.2.8",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "@storybook/addon-actions": "^5.3.12",
+    "@storybook/addon-knobs": "^5.3.12",
+    "@storybook/addon-links": "^5.3.12",
+    "@storybook/addons": "^5.3.12",
+    "@storybook/react": "^5.3.12",
     "prettier": "1.19.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "^3.3.0",
+    "react-scripts": "^3.3.1",
     "storybook-dark-mode": "^0.2.0"
   }
 }
