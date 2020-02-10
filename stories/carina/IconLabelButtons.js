@@ -14,10 +14,10 @@ const useStyles = makeStyles(theme => ({
 
 export default function IconLabelButtons() {
   const classes = useStyles();
-  const positionValue = radios(
-    "Label position",
-    ["top", "bottom", "left", "right"],
-    "bottom"
+  const directionValue = radios(
+    "Direction",
+    ["row", "column", "column-reverse", "row-reverse"],
+    "column"
   );
   const labelValue = text("Label value", "Delete");
   // const color = select(
@@ -28,7 +28,7 @@ export default function IconLabelButtons() {
 
   return (
     <div className={classes.root}>
-      <IconButton icon={Trash} placement={positionValue}>
+      <IconButton icon={Trash} direction={directionValue}>
         {labelValue}
       </IconButton>
     </div>
