@@ -1,4 +1,3 @@
-// import { createMuiTheme } from "@material-ui/core/styles";
 import COLOR from "./Colors";
 
 export default {

@@ -1,5 +1,5 @@
 import React from "react";
-import { select, text, radios } from "@storybook/addon-knobs";
+import { text, radios } from "@storybook/addon-knobs";
 import { makeStyles } from "@material-ui/core/styles";
 import { IconButton } from "../../src/core";
 import Trash from "../../src/icons/Trash";
@@ -20,15 +20,15 @@ export default function IconLabelButtons() {
     "bottom"
   );
   const labelValue = text("Label value", "Delete");
-  const color = select(
-    "Color",
-    ["default", "primary", "secondary", "action", "error"],
-    "primary"
-  );
+  // const color = select(
+  //   "Color",
+  //   ["default", "primary", "secondary", "action", "error"],
+  //   "primary"
+  // );
 
   return (
     <div className={classes.root}>
-      <IconButton color={color} icon={Trash} placement={positionValue}>
+      <IconButton icon={Trash} placement={positionValue}>
         {labelValue}
       </IconButton>
     </div>
