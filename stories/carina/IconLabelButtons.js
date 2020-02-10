@@ -1,16 +1,8 @@
 import React from "react";
 import { text, radios } from "@storybook/addon-knobs";
-import { makeStyles } from "@material-ui/core/styles";
 import { IconButton } from "../../src/core";
 import Trash from "../../src/icons/Trash";
-
-const useStyles = makeStyles(theme => ({
-  root: {
-    "& > *": {
-      margin: theme.spacing(1),
-    },
-  },
-}));
+import { useStyles } from "./style";
 
 export default function IconLabelButtons() {
   const classes = useStyles();
