@@ -9,7 +9,7 @@ Interact with components at http://storybook.carina.org
 ## Installation
 
 ```
-npm install @material-ui/core @carinaweb/ui
+npm install @material-ui/core @carina/ui
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ To import a Carina component, such as the Theme:
 import React from "react";
 import { MuiThemeProvider } from "@material-ui/core/styles";
 import { CssBaseline, Typography } from "@material-ui/core";
-import { Theme } from "@carinaweb/ui";
+import { Theme } from "@carina/ui";
 
 function App() {
   return (
