@@ -1,5 +1,5 @@
 {
-  "name": "@carina/ui",
+  "name": "@carinaweb/ui",
   "version": "0.1.4",
   "main": "dist/index.js",
   "files": [
