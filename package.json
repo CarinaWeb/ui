@@ -1,5 +1,5 @@
 {
-  "name": "@carinaweb/ui",
+  "name": "@carina/ui",
   "version": "0.1.5",
   "main": "dist/index.js",
   "files": [
@@ -8,7 +8,8 @@
   ],
   "repository": "git://github.com/CarinaWeb/ui.git",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   },
   "dependencies": {
     "@material-ui/core": "^4.9.1",
@@ -27,8 +28,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public",
-    "postpublish": "npm publish --ignore-scripts --@carina:registry='https://registry.npmjs.org'"
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
