@@ -1,7 +1,6 @@
 {
   "name": "@carina/ui",
-  "version": "0.1.12",
-  "main": "dist/index.js",
+  "version": "0.1.14",
   "files": [
     "dist",
     "README.md"
@@ -24,12 +23,13 @@
   },
   "scripts": {
     "start": "start-storybook -p 9009 -s public",
-    "build": "rm -rf dist && NODE_ENV=production babel src --out-dir dist --copy-files --ignore */stories,*/__tests__,spec.js,test.js,*/__snapshots__",
+    "build": "rm -rf dist && NODE_ENV=production babel src --out-dir dist --extensions '.ts,.tsx' --ignore */stories,*/__tests__,spec.js,test.js,*/__snapshots__ && npm run generateTypes",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "generateTypes": "tsc --emitDeclarationOnly --outDir dist"
   },
   "eslintConfig": {
     "extends": "react-app"
