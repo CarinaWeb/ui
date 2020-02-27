@@ -41,7 +41,7 @@ Clone this repository and then:
 - `npm install`: install dependencies
 - `npm start`: runs storybook at http://localhost:9009/
 - `git push` to `master` branch: a github workflow will build and deploy storybook to production
-- `npm publish`: publish package to npm and github
+- `npm run dist`: publish package to NPM
 
 Other scripts:
 
