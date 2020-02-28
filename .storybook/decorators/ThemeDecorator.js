@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import { makeStyles } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -14,9 +15,11 @@ export default storyFn => {
   const classes = useStyles();
 
   return (
-    <ThemeProvider theme={createMuiTheme(Theme)}>
-      <CssBaseline />
-      <div className={classes.root}>{storyFn()}</div>
-    </ThemeProvider>
+    <BrowserRouter>
+      <ThemeProvider theme={createMuiTheme(Theme)}>
+        <CssBaseline />
+        <div className={classes.root}>{storyFn()}</div>
+      </ThemeProvider>
+    </BrowserRouter>
   );
 };
