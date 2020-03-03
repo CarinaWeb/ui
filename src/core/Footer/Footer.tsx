@@ -8,8 +8,8 @@ import { useStyles } from "./style";
 import {
   LOGO_SECONDARY,
   LOGO_FACEBOOK,
-  LOGO_LINKEDIN
-} from "src/constants/images";
+  LOGO_LINKEDIN,
+} from "../../constants/images";
 
 interface Props {
   children?: any;

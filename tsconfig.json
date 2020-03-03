@@ -16,6 +16,5 @@
     "noEmit": false,
     "jsx": "react",
     "declaration": true
-  },
-  "include": ["src"]
+  }
 }

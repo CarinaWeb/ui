@@ -1,6 +1,6 @@
 import React from "react";
 import { useStyles } from "./style";
-import { LOGO_PRIMARY } from "src/constants/images";
+import { LOGO_PRIMARY } from "../../constants/images";
 import { Box, Grid } from "@material-ui/core";
 import { Link } from "react-router-dom";
 
