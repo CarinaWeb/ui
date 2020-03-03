@@ -1,5 +1,5 @@
 import React from "react";
-import { Footer as CarinaFooter } from "../../src/core";
+import { Footer as CarinaFooter } from "../../dist/core";
 import { useStyles } from "./style";
 import { Button, Grid } from "@material-ui/core";
 

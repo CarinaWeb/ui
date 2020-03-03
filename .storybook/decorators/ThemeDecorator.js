@@ -3,7 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import { makeStyles } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import { Theme } from "../../src/styles";
+import { Theme } from "../../dist/styles";
 
 const useStyles = makeStyles(Theme => ({
   root: {

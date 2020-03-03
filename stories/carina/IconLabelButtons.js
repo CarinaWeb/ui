@@ -1,7 +1,7 @@
 import React from "react";
 import { text, radios } from "@storybook/addon-knobs";
-import { IconButton } from "../../src/core";
-import Trash from "../../src/icons/Trash";
+import { IconButton } from "../../dist/core";
+import Trash from "../../dist/icons/Trash";
 import { useStyles } from "./style";
 
 export default function IconLabelButtons() {

@@ -1,5 +1,5 @@
 import React from "react";
-import { Card as CarinaCard } from "../../src/core";
+import { Card as CarinaCard } from "../../dist/core";
 import { useStyles } from "./style";
 import { Typography } from "@material-ui/core";
 import { lorem } from "./constants";

@@ -1,4 +1,4 @@
-import COLOR from "./Colors";
+import Colors from "./Colors";
 
 export default {
   overrides: {
@@ -56,23 +56,23 @@ export default {
     },
     subtitle1: {
       fontSize: "0.75rem",
-      color: COLOR.GRAY80,
+      color: Colors.GRAY80,
     },
   },
   palette: {
     text: {
-      primary: COLOR.BLACK50,
+      primary: Colors.BLACK50,
     },
     background: {
-      default: COLOR.WHITE,
+      default: Colors.WHITE,
     },
     primary: {
-      main: COLOR.ORANGE,
-      contrastText: COLOR.WHITE,
+      main: Colors.ORANGE,
+      contrastText: Colors.WHITE,
     },
     secondary: {
-      main: COLOR.BLUE,
-      contrastText: COLOR.WHITE,
+      main: Colors.BLUE,
+      contrastText: Colors.WHITE,
     },
   },
 };

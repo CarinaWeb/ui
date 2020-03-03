@@ -1,5 +1,5 @@
 import React from "react";
-import { Header as CarinaHeader } from "../../src/core";
+import { Header as CarinaHeader } from "../../dist/core";
 import { useStyles } from "./style";
 import { Button } from "@material-ui/core";
 

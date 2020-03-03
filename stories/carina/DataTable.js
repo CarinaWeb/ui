@@ -1,7 +1,7 @@
 import React from "react";
 import { radios } from "@storybook/addon-knobs";
-import { DataTable as CarinaDataTable } from "../../src/core";
-import { Colors } from "../../src/styles";
+import { DataTable as CarinaDataTable } from "../../dist/core";
+import { Colors } from "../../dist/styles";
 import { useStyles } from "./style";
 import { columns, data } from "./tableData";
 
