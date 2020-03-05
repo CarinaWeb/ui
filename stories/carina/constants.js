@@ -1,4 +1,4 @@
-export const fullLorem =
+export const FULL_LOREM =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Erat pellentesque adipiscing commodo elit at. Elementum nibh tellus molestie nunc non blandit massa enim. Et odio pellentesque diam volutpat commodo sed egestas egestas fringilla. Augue interdum velit euismod in pellentesque massa placerat duis. Tortor consequat id porta nibh venenatis cras sed felis. In fermentum et sollicitudin ac orci phasellus. Eros donec ac odio tempor orci dapibus ultrices in. Lobortis mattis aliquam faucibus purus in massa tempor. Neque gravida in fermentum et sollicitudin ac orci. Ut morbi tincidunt augue interdum velit euismod in pellentesque massa.";
 
-export const lorem = length => fullLorem.slice(0, length) + "...";
+export const createLorem = length => FULL_LOREM.slice(0, length) + "...";

@@ -1,6 +1,6 @@
 import React from "react";
 import { withKnobs } from "@storybook/addon-knobs";
-import { IconLabelButtons } from ".";
+import { IconLabelButtons } from "./";
 
 export default {
   title: "Carina UI|IconButton",

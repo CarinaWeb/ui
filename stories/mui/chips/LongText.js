@@ -28,24 +28,25 @@ export default function MediaCard() {
       <CardActionArea>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            banana
+            Primary Title
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            It's a banana
+            Secondary Title Text
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions className={classes.chips}>
-        <Chip label="Blue" color="secondary" />
         <Chip label="Orange" color="secondary" />
-        <Chip label="Taco" color="secondary" />
-        <Chip label="Canada" color="secondary" />
+        <Chip label="Red" color="secondary" />
+        <Chip label="Green" color="secondary" />
+        <Chip label="Black" color="secondary" />
         <Chip
           className={classes.chip}
           label="Here is a lot of text in a chip to show what happens inside a card"
           color="secondary"
         />
-        <Chip label="Banana" color="secondary" />
+        <Chip label="Yellow" color="secondary" />
+        <Chip label="Gray" color="secondary" />
       </CardActions>
     </Card>
   );

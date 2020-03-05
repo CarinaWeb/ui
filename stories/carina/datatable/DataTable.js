@@ -1,8 +1,7 @@
 import React from "react";
 import { radios } from "@storybook/addon-knobs";
-import { DataTable as CarinaDataTable } from "../../dist/core";
-import { Colors } from "../../dist/styles";
-import { useStyles } from "./style";
+import { DataTable as CarinaDataTable } from "../../../dist/core";
+import { Colors } from "../../../dist/styles";
 import { columns, data } from "./tableData";
 
 const DEFAULT_OPTIONS = {
@@ -20,7 +19,6 @@ const DEFAULT_OPTIONS = {
 };
 
 export default function DataTable() {
-  const classes = useStyles();
   const searchFieldAlignment = radios(
     "Search Field Alignement",
     ["left", "right"],
@@ -33,12 +31,10 @@ export default function DataTable() {
   };
 
   return (
-    <div className={classes.root}>
-      <CarinaDataTable
-        columns={columns}
-        data={data}
-        options={options}
-      ></CarinaDataTable>
-    </div>
+    <CarinaDataTable
+      columns={columns}
+      data={data}
+      options={options}
+    ></CarinaDataTable>
   );
 }
