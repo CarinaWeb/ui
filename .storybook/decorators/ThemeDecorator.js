@@ -1,7 +1,10 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
-import { makeStyles } from "@material-ui/core/styles";
+import {
+  ThemeProvider,
+  createMuiTheme,
+  makeStyles,
+} from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { Theme } from "../../dist/styles";
 

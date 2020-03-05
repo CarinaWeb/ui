@@ -1,4 +1,4 @@
-import { configure, addDecorator, addParameters } from "@storybook/react";
+import { addDecorator, addParameters } from "@storybook/react";
 import { themes } from "@storybook/theming";
 import ThemeDecorator from "./decorators/ThemeDecorator";
 
@@ -34,6 +34,3 @@ addParameters({
 });
 
 addDecorator(ThemeDecorator);
-
-// automatically import all files ending in *.stories.js
-configure(require.context("../stories", true, /\.stories\.js$/), module);

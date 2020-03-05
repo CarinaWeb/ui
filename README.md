@@ -20,7 +20,7 @@ To import a Carina component, such as the Theme:
 import React from "react";
 import { MuiThemeProvider } from "@material-ui/core/styles";
 import { CssBaseline, Typography } from "@material-ui/core";
-import { Theme } from "@carina/ui";
+import { Theme } from "@carina/ui/dist/styles";
 
 function App() {
   return (
@@ -33,6 +33,8 @@ function App() {
 
 export default App;
 ```
+
+- _Note about Carina import: `.../dist/...' will be removed in next minor version ^0.2.0_
 
 ## Development
 
@@ -47,3 +49,7 @@ Other scripts:
 
 - `npm run build`: outputs distributable components from `/src` into `/dist`
 - `npm run build-storybook`: outputs stories from `/stories` into `storybook-static`
+
+# Carina Components
+
+TODO
